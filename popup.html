@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Software Indicator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌱 Green Software Indicator</h1>
+    </header>
+    
+    <main>
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Analyzing website...</p>
+      </div>
+      
+      <div id="results" class="results" style="display: none;">
+        <div class="score-display">
+          <div id="badge" class="badge"></div>
+          <div class="score-info">
+            <div id="rating" class="rating"></div>
+            <div id="score" class="score"></div>
+          </div>
+        </div>
+        
+        <div class="details">
+          <h3>Green Software Practices</h3>
+          <div class="practice-list">
+            <div class="practice-item" id="imageOptimization">
+              <span class="icon">🖼️</span>
+              <span class="label">Image Optimization</span>
+              <span class="status"></span>
+            </div>
+            <div class="practice-item" id="minifiedResources">
+              <span class="icon">📦</span>
+              <span class="label">Minified Resources</span>
+              <span class="status"></span>
+            </div>
+            <div class="practice-item" id="compressionEnabled">
+              <span class="icon">🗜️</span>
+              <span class="label">Compression</span>
+              <span class="status"></span>
+            </div>
+            <div class="practice-item" id="reducedRequests">
+              <span class="icon">📡</span>
+              <span class="label">Reduced HTTP Requests</span>
+              <span class="status"></span>
+            </div>
+            <div class="practice-item" id="energyEfficientDesign">
+              <span class="icon">⚡</span>
+              <span class="label">Energy Efficient Design</span>
+              <span class="status"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="actions">
+          <button id="reanalyze" class="btn-primary">Re-analyze</button>
+          <button id="criteria-info" class="btn-secondary">Criteria Info</button>
+          <button id="learn-more" class="btn-secondary">Learn More</button>
+        </div>
+      </div>
+      
+      <div id="error" class="error" style="display: none;">
+        <p>Unable to analyze this page. Please try refreshing or visit a different website.</p>
+      </div>
+      
+      <!-- Criteria Info Modal -->
+      <div id="criteria-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>🌱 Evaluation Criteria</h2>
+            <button id="close-modal" class="close-btn">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="criteria-item">
+              <h3>🖼️ Image Optimization (20%)</h3>
+              <p><strong>Checks:</strong> WebP/AVIF formats, lazy loading attributes</p>
+              <p><strong>Threshold:</strong> 50%+ of images optimized</p>
+              <p><strong>Impact:</strong> Reduces data transfer by 25-35%</p>
+            </div>
+            
+            <div class="criteria-item">
+              <h3>📦 Minified Resources (20%)</h3>
+              <p><strong>Checks:</strong> .min.js/.min.css files, compressed assets</p>
+              <p><strong>Threshold:</strong> 30%+ of resources minified</p>
+              <p><strong>Impact:</strong> Reduces bandwidth by 10-40%</p>
+            </div>
+            
+            <div class="criteria-item">
+              <h3>🗜️ Compression (20%)</h3>
+              <p><strong>Checks:</strong> Content-Encoding headers, compression meta tags</p>
+              <p><strong>Threshold:</strong> Server compression enabled</p>
+              <p><strong>Impact:</strong> Reduces transfer by 60-80%</p>
+            </div>
+            
+            <div class="criteria-item">
+              <h3>📡 Reduced HTTP Requests (20%)</h3>
+              <p><strong>Checks:</strong> Total external resources count</p>
+              <p><strong>Threshold:</strong> Fewer than 20 external resources</p>
+              <p><strong>Impact:</strong> Less network energy per request</p>
+            </div>
+            
+            <div class="criteria-item">
+              <h3>⚡ Energy Efficient Design (20%)</h3>
+              <p><strong>Checks:</strong> Dark mode support, async scripts</p>
+              <p><strong>Threshold:</strong> 50%+ async loading or dark theme</p>
+              <p><strong>Impact:</strong> 15-60% less screen energy (OLED)</p>
+            </div>
+            
+            <div class="scoring-info">
+              <h3>📊 Scoring System</h3>
+              <ul>
+                <li><span class="score-badge excellent">✓ Excellent</span> 70-100% (4-5 criteria)</li>
+                <li><span class="score-badge good">~ Good</span> 40-69% (2-3 criteria)</li>
+                <li><span class="score-badge poor">✗ Poor</span> 0-39% (0-1 criteria)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
