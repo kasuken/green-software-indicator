@@ -4,6 +4,8 @@
 
 A Chrome/Edge browser extension that evaluates websites for green software development practices and displays colored badges indicating their environmental sustainability.
 
+<p align="center"><img width="486" height="544" alt="image" src="https://github.com/user-attachments/assets/a50b619c-01d6-4903-a342-4036deb7105f" /></p>
+
 ## Features
 
 - **Real-time Analysis**: Automatically analyzes websites when you visit them
