@@ -4,6 +4,8 @@
 
 A Chrome/Edge browser extension that evaluates websites for green software development practices and displays colored badges indicating their environmental sustainability.
 
+<p align="center"><img width="486" height="544" alt="image" src="https://github.com/user-attachments/assets/a50b619c-01d6-4903-a342-4036deb7105f" /></p>
+
 ## Features
 
 - **Real-time Analysis**: Automatically analyzes websites when you visit them
@@ -90,21 +92,21 @@ The extension will be available on the Chrome Web Store and Microsoft Edge Add-o
 1. **Automatic Analysis**: The extension automatically analyzes websites as you browse
 2. **View Results**: Click the extension icon to see detailed analysis
 3. **Badge Indicators**: 
-# 🌱 Green Software Indicator
+   - ✓ Green badge = Excellent green practices (70%+ score)
    - ~ Yellow badge = Good practices (40-69% score) 
    - ✗ Red badge = Needs improvement (<40% score)
-This is a Chrome/Edge browser extension that evaluates websites for green software development practices and displays colored badges. ♻️🌍
+   - ? Gray badge = Unable to analyze
 
 ## Technical Details
-## 📦 Project Overview
+
 ### Architecture
-**Type**: Browser Extension (Chrome/Edge) 🧩
-**Language**: JavaScript 💻
-**Framework**: Manifest V3 Extension API 🛠️
-**Purpose**: Evaluate and indicate green software development practices on websites 🌿
+- **Manifest V3**: Uses latest Chrome extension architecture
+- **Service Worker**: Background analysis and badge management
+- **Content Scripts**: Page analysis and monitoring
+- **Storage**: Local storage for analysis results
 
 ### Files Structure
-## 🗂️ Project Structure
+```
 greenindicator/
 ├── manifest.json          # Extension configuration
 ├── background.js           # Service worker for analysis
@@ -113,7 +115,7 @@ greenindicator/
 ├── popup.css              # Popup styling
 ├── popup.js               # Popup functionality
 ├── icons/                 # Extension icons (16, 32, 48, 128px)
-## ✨ Key Features
+└── README.md              # This file
 ```
 
 ## Development
@@ -125,25 +127,25 @@ greenindicator/
 ### Testing
 1. Load the extension in developer mode
 2. Visit various websites to test analysis
-## 📋 Green Software Evaluation Criteria
+3. Check console logs for debugging information
 4. Use Chrome DevTools to inspect extension behavior
 
-## 🛠️ Technical Implementation
+### Contributing
 1. Fork the repository
 2. Create a feature branch
-## 📝 Development Guidelines
+3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-## 📁 File Responsibilities
+
 ## Green Software Foundation
 This extension is inspired by the principles of the [Green Software Foundation](https://greensoftware.foundation/), which promotes sustainable software development practices.
-## 🧪 Installation & Testing
+
 ## License
 MIT License - see [LICENSE](LICENSE) file for details
-## 🔮 Future Enhancements
+
 ## Privacy
 This extension:
-## 🏆 Code Quality Standards
+- Does not collect personal data
 - Does not track browsing history
 - Analyzes only the current page's technical characteristics
 - Stores analysis results locally in your browser
