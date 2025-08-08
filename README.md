@@ -90,21 +90,21 @@ The extension will be available on the Chrome Web Store and Microsoft Edge Add-o
 1. **Automatic Analysis**: The extension automatically analyzes websites as you browse
 2. **View Results**: Click the extension icon to see detailed analysis
 3. **Badge Indicators**: 
-   - ✓ Green badge = Excellent green practices (70%+ score)
+# 🌱 Green Software Indicator
    - ~ Yellow badge = Good practices (40-69% score) 
    - ✗ Red badge = Needs improvement (<40% score)
-   - ? Gray badge = Unable to analyze
+This is a Chrome/Edge browser extension that evaluates websites for green software development practices and displays colored badges. ♻️🌍
 
 ## Technical Details
-
+## 📦 Project Overview
 ### Architecture
-- **Manifest V3**: Uses latest Chrome extension architecture
-- **Service Worker**: Background analysis and badge management
-- **Content Scripts**: Page analysis and monitoring
-- **Storage**: Local storage for analysis results
+**Type**: Browser Extension (Chrome/Edge) 🧩
+**Language**: JavaScript 💻
+**Framework**: Manifest V3 Extension API 🛠️
+**Purpose**: Evaluate and indicate green software development practices on websites 🌿
 
 ### Files Structure
-```
+## 🗂️ Project Structure
 greenindicator/
 ├── manifest.json          # Extension configuration
 ├── background.js           # Service worker for analysis
@@ -113,7 +113,7 @@ greenindicator/
 ├── popup.css              # Popup styling
 ├── popup.js               # Popup functionality
 ├── icons/                 # Extension icons (16, 32, 48, 128px)
-└── README.md              # This file
+## ✨ Key Features
 ```
 
 ## Development
@@ -125,25 +125,25 @@ greenindicator/
 ### Testing
 1. Load the extension in developer mode
 2. Visit various websites to test analysis
-3. Check console logs for debugging information
+## 📋 Green Software Evaluation Criteria
 4. Use Chrome DevTools to inspect extension behavior
 
-### Contributing
+## 🛠️ Technical Implementation
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes
+## 📝 Development Guidelines
 4. Test thoroughly
 5. Submit a pull request
-
+## 📁 File Responsibilities
 ## Green Software Foundation
 This extension is inspired by the principles of the [Green Software Foundation](https://greensoftware.foundation/), which promotes sustainable software development practices.
-
+## 🧪 Installation & Testing
 ## License
 MIT License - see [LICENSE](LICENSE) file for details
-
+## 🔮 Future Enhancements
 ## Privacy
 This extension:
-- Does not collect personal data
+## 🏆 Code Quality Standards
 - Does not track browsing history
 - Analyzes only the current page's technical characteristics
 - Stores analysis results locally in your browser
